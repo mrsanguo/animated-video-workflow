@@ -6,6 +6,19 @@
 
 默认采用半自动模式：在分镜与素材方案、素材重规划、代表性试片三个节点等待确认。用户明确要求全自动时，才连续执行。
 
+## 最简单的安装方式（推荐）
+
+不需要打开终端，也不需要理解任何命令。把下面整段复制给你正在使用的 Codex、Claude Code、Cursor、OpenCode 或其他能够安装 Agent Skill 的工具：
+
+```text
+请帮我安装这个 Agent Skill，并在安装后验证它是否可用：
+https://github.com/mrsanguo/animated-video-workflow
+
+可安装的 Skill 位于仓库的 skills/animated-video-workflow。请优先使用你当前工具的原生 Skill 安装器；如果没有，请按本 README 下方的兼容方式，将它安装到用户级/全局 Skills 目录。安装后告诉我安装位置，以及是否需要重启 Agent。
+```
+
+下载、路径选择和安装都交给 Agent 完成。下面的安装细节主要用于 Agent 自动处理或排查安装问题。
+
 ## 核心能力
 
 - 真人视频、音频、SRT 和文稿都可以作为核心输入。
@@ -17,7 +30,7 @@
 - 分别设计 16:9 与 9:16 构图，不做简单居中裁切。
 - 登记外部素材来源，由用户完成最终版权审核。
 
-## 安装
+## 安装细节（一般用户无需操作）
 
 ### 多种 Agent 通用安装
 
@@ -115,3 +128,4 @@ python -m unittest discover -s tests -p "test_*.py" -v
 ## 许可证
 
 MIT，详见 [LICENSE](LICENSE)。
+
