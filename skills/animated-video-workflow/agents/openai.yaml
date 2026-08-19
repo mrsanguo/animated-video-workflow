@@ -1,0 +1,4 @@
+interface:
+  display_name: "动画视频总控"
+  short_description: "识别真人主体并编排素材、多引擎动画、横竖屏渲染及质检"
+  default_prompt: "Use $animated-video-workflow to detect the presenter and create a subject-aware mixed live-action and animated video."
