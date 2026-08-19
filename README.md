@@ -6,6 +6,19 @@ An installable Agent Skill for turning presenter videos, voiceovers, subtitles, 
 
 The default workflow is semi-automatic: the agent pauses at the storyboard, asset re-planning, and representative-preview stages. Full automation is available when explicitly requested.
 
+## Easiest installation (recommended)
+
+No terminal knowledge is required. Copy the entire message below into Codex, Claude Code, Cursor, OpenCode, or another agent that can install Agent Skills:
+
+```text
+Please install this Agent Skill and verify that it is available after installation:
+https://github.com/mrsanguo/animated-video-workflow
+
+The installable Skill is located at skills/animated-video-workflow. Prefer your agent's native Skill installer. If none is available, use the compatible method documented below to install it into the user-level/global Skills directory. Then tell me where it was installed and whether the agent needs to be restarted.
+```
+
+The agent should handle downloading, path selection, installation, and verification. The details below are primarily for agents or troubleshooting.
+
 ## Highlights
 
 - Accepts presenter video, audio, SRT, or scripts as equal core inputs.
@@ -17,7 +30,7 @@ The default workflow is semi-automatic: the agent pauses at the storyboard, asse
 - Builds separate 16:9 and 9:16 layouts instead of applying a blind center crop.
 - Records external asset provenance and leaves final copyright approval to the user.
 
-## Install
+## Installation details (usually not needed by users)
 
 ### Open agent ecosystem
 
@@ -116,3 +129,4 @@ The current suite covers input inspection, plan validation, subject-layout logic
 ## License
 
 MIT. See [LICENSE](LICENSE).
+
